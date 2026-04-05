@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+body {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #0b0f1a;
+  color: #f0f4ff;
+}
+
+.dark .bg-white {
+  background-color: #0b1224 !important;
+  border-color: #1f2a42 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #0e172d !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #16213e !important;
+}
+
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-400,
+.dark .text-gray-300,
+.dark .text-gray-200,
+.dark .text-gray-100 {
+  color: #cbd5e1 !important;
+}
+
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300,
+.dark .border-gray-400,
+.dark .border-gray-500 {
+  border-color: #2e3a5a !important;
+}
+
+.dark .shadow-sm,
+.dark .shadow-md,
+.dark .shadow-lg {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Inactive nav buttons - light mode */
+nav button.nav-inactive {
+  color: #0F172A !important;
+  background-color: transparent !important;
+}
+
+/* Hover - light mode */
+nav button.nav-inactive:hover {
+  background-color: #eff6ff !important;
+  color: #3b82f6 !important;
+}
+
+/* Active nav buttons - light mode */
+nav button.nav-active {
+  background-color: #dbeafe !important;
+  color: #2563eb !important;
+}
+
+/* Inactive nav buttons - dark mode */
+.dark nav button.nav-inactive {
+  color: #e5e7eb !important;
+  background-color: transparent !important;
+}
+
+/* Hover - dark mode */
+.dark nav button.nav-inactive:hover {
+  background-color: #374151 !important;
+  color: #93c5fd !important;
+}
+
+/* Active nav buttons - dark mode */
+.dark nav button.nav-active {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* Transaction row text - light mode */
+.transaction-row p {
+  color: #0f172a !important;
+}
+
+/* Transaction row text - dark mode */
+.dark .transaction-row p {
+  color: #e5e7eb !important;
+}
+
+/* Transaction row hover - light mode */
+.transaction-row:hover {
+  background-color: #e0f2fe !important;
+}
+
+/* Transaction row hover - dark mode */
+.dark .transaction-row:hover {
+  background-color: #1e293b !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a2236;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1163d5;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6366f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(10, 86%, 38%);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}
